@@ -121,11 +121,11 @@ function isPalindrom(word){
 
 // 4**var2 
 
-// function isPalindrom2(word1){
-//     return word1.toLowerCase() === word1.toLowerCase().split('').reverse().join('')
-// }
+ function isPalindrom2(word1){
+     return word1.toLowerCase() === word1.toLowerCase().split('').reverse().join('')
+ }
 
-//         console.log(`${isPalindrom2('abba')? 'it is a palindrom' : 'it is not a palindrom'}`)
+         console.log(`${isPalindrom2('abba')? 'it is a palindrom' : 'it is not a palindrom'}`)
 //         console.log(`${isPalindrom2('abrba')? 'it is a palindrom' : 'it is not a palindrom'}`)
 //         console.log(`${isPalindrom2('Abba')? 'it is a palindrom' : 'it is not a palindrom'}`)
 //         console.log(`${isPalindrom2('abbas')? 'it is a palindrom' : 'it is not a palindrom'}`)
@@ -133,24 +133,18 @@ function isPalindrom(word){
    
 // 4**var3 
 
-// function isPalindrom3(word3){
-//     word3 = word3.toLowerCase()
+ function isPalindrom3(word3){
+     word3 = word3.toLowerCase()
+     let len = word3.length
+ for (let i = 0;  i < len / 2; i++) {
+                if(word3[i] !== word3[len - 1 - i]) {
+                     return 'it is not a palindrom';
+                 }
+             }
+            return 'it is a palindrom';
+         }
 
-//     let len = word3.length
-
-// for (let i = 0;  i < len / 2; i++) {
-           
-//                 if(word3[i] !== word3[len - 1 - i]) {
-
-//                     return 'it is not a palindrom';
-//                 }
-//             }
-
-//             return 'it is a palindrom';
-
-//         }
-
-//         console.log(isPalindrom3('abfba'))
+         console.log(isPalindrom3('abfba'))
 //         console.log(isPalindrom3('Abfba'))
 //         console.log(isPalindrom3('abfbva'))
 //         console.log(isPalindrom3('abf4ba'))
